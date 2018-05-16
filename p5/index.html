@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>examen</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+	  var socket = io();
+	</script>
+	<script src="sketch.js"></script>
+
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			overflow: hidden;
+		}
+		canvas {
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+	<button type="button" onclick="tipo_figura(1)" >Linea</button>
+	<button type="button" onclick="tipo_figura(2)" >Circulo</button>
+	<button type="button" onclick="tipo_figura(3)" >Rectangulo</button>
+	<button style="background-color: #000000" type="button" onclick="selecccion_color('#000000')" >.</button>
+	<button style="background-color: #FF0000" type="button" onclick="selecccion_color('#FF0000')" >.</button>
+	<button style="background-color: #FF8000" type="button" onclick="selecccion_color('#FF8000')" >.</button>
+	<button style="background-color: #FFFF00" type="button" onclick="selecccion_color('#FFFF00')" >.</button>
+	<button style="background-color: #00FF00" type="button" onclick="selecccion_color('#00FF00')" >.</button>
+	<button style="background-color: #00FFFF" type="button" onclick="selecccion_color('#00FFFF')" >.</button>
+	<button style="background-color: #0000FF" type="button" onclick="selecccion_color('#0000FF')" >.</button>
+	<button style="background-color: #FF00FF" type="button" onclick="selecccion_color('#FF00FF')" >.</button>
+
+</body>
+</html>
